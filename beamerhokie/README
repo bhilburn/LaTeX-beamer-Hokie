@@ -1,0 +1,77 @@
+INCLUDED FILES
+-------------------------------------------------------------------------------
+This distribution contains 3 LaTeX *.sty files:
+
+* beamercolorthemeHokieColors
+    This file defines colors based on the VT Web Color Palette Guidelines. All
+    of the colors are defined using RGB values, and assigned to English-language
+    names. Note that very few of these colors are actually used in the provided
+    theme - they are defined for your use, in case you want to use them on your
+    own.
+
+* beamercolorthemeHokieLayout
+    This style file assigns the defined Hokie Colors to various aspects of the
+    slides, defines the bullet point shape and color for {itemize} environments,
+    defines some font colors, etc.
+
+* beamerthemeHokie
+    This file defines the inner and outer slide theme, pulls in the Hokie Colors
+    definitions, and makes other presentation-wide declarations.  This theme
+    file is what enables the \usetheme{Hokie} command.
+
+* png logo files
+    These are logo files with backgrounds that match the default background
+    canvas setting in beamercolorthemeHokieLayout. Right now there is the
+    generic VT logo, and one for Wireless@VT.
+
+
+USAGE OF THEMES
+-------------------------------------------------------------------------------
+For now, there is no installation.  Put the style files in your project
+directory, and include the  following directive under your
+\documentclass{beamer} declaration, but before \begin{document}:
+
+\usetheme{Hokie}
+
+
+USAGE OF LOGOS
+-------------------------------------------------------------------------------
+If you want to use one of the logos in your slides, include the following code
+between \documentclass{beamer} and \begin{document}:
+
+\graphicspath{{./}}  % Assuming the themes are in the local directory
+\DeclareGraphicsExtensions{.png}
+\logo{\includegraphics[height=0.5cm]{vt-logo.png}}
+\setbeamertemplate*{logo}
+
+Note that the 'graphicx' package is included by default in beamer-class
+documents.
+
+
+EXTRA INSTRUCTIONS
+-------------------------------------------------------------------------------
+The theme provides for a number of feature usage, and things actually look 
+somewhat strange if you DON'T use them.  Make sure, for example, that you set 
+your organization with the institution command - otherwise, there will be an 
+empty set of parenthesis at the bottom of your slides:
+
+\institute{Virginia Tech}
+
+Also, remember that you can easily change the default font of your slides. I've 
+found that things look awesome with the Palatino font:
+
+\usepackage{palatino}
+
+
+LICENSE
+-------------------------------------------------------------------------------
+All code is released under the GNU GPL v3.
+
+
+CONTACT INFORMATION
+-------------------------------------------------------------------------------
+If you have any comments or suggestions, you can contact the author at bhilburn
+at gmail dot com.
+
+I hope you find this useful, and enjoy!
+GO HOKIES!

@@ -1,0 +1,127 @@
+\documentclass{beamer}
+
+\usetheme{Hokie}
+\usepackage{palatino}
+
+\title{LaTeX Beamer Example}
+\author{Benjamin Hilburn}
+\institute{Virginia Tech}
+\date{\today}
+
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.png}
+\logo{\includegraphics[height=0.5cm]{vt-logo.png}}
+\setbeamertemplate*{logo}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Introduction}
+\subsection[Basic Slide]{Example Basic Slide}
+
+\frame
+{
+	\frametitle{An example slide}
+	
+	This is an example basic slide. It just has some text on it, no figures, tables, proofs, math, etc.  Note that Beamer lets have a 'long title' and a 'short title', used for sectioning and navigation.
+}
+
+\frame
+{
+	\frametitle{Example Bullet List}
+
+	This is an example of a bulleted list. Note that the bullets can be customized per the indent level.
+	
+	\begin{itemize}
+	\item Hello, I am a bullet.
+	\begin{itemize}
+		\item This is a sub-bullet.
+		\begin{itemize}
+			\item This is a sub-sub-bullet.
+		\end{itemize}
+	\end{itemize}
+	\vspace{\baselineskip}
+	\item I am also a normal bullet..
+	\end{itemize}
+}
+
+\section{Examples}
+
+\frame
+{
+	\frametitle{Some Examples}
+
+	This section has some examples of common slideshow elements.
+}
+
+\subsection{It's a table!!}
+
+\frame
+{
+	\frametitle{Example Table}
+	
+	\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|} \hline \hline
+	Restrained     & Swivel         & Telemetry      \\ \hline \hline
+	$\sim$ 400bpm  & $\sim$ 380bpm  & $\sim$ 310 bpm \\
+	$\sim$ 140mmHg & $\sim$ 120mmHg & $\sim$ 100mmHg \\ \hline \hline
+	\end{tabular}
+	\caption{Heart beat and blood pressure using different monitoring methods}
+	\label{tbl:kramer}
+	\end{table}
+}
+
+\subsection{HOW DO I DO MATH??}
+\frame
+{
+	\frametitle{Example of a Theorem}
+	It is easy to include mathematical theorems and such:
+	\begin{theorem}
+	The quick brown fox jumps over the lazy dog.
+	\end{theorem}
+}
+
+
+\subsection{Everybody loves a good downsample.}
+\frame
+{
+	\frametitle{Example Figure}
+	
+	\begin{figure}
+	\centering
+	\includegraphics[width=5cm]{sample_rate.png}
+	\caption{Our own test of downsampling}
+	\label{fig:test_down_sampling}
+	\end{figure}
+}
+
+\subsection{some numbers}
+\frame
+{
+	\frametitle{Example Equation}
+
+	\[8 / 4 = \frac{8}{4} = 8 \cdot \frac{1}{4} = 8 \cdot 4^{-1}\]
+	
+	\[\left( \begin{array}{cc}
+	2 & 1 \\
+	0 & 1 \\
+	1 & 4 \\
+	\end{array} \right)\]
+}
+
+\section{About}
+\subsection{Last Slide}
+
+\frame
+{
+	\frametitle{About}
+
+	This slide show is mostly to demo the Hokie Beamer theme and see how it looks in various slideshow elements.  Some parts of the presentation are taken from Jean-Etienne Poirrier's example presentation, which can be found here:  \href{http://www.poirrier.be/~jean-etienne}{http://www.poirrier.be/~jean-etienne}.
+}
+
+\end{document}
