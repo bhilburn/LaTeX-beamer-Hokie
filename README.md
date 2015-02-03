@@ -36,7 +36,7 @@ This distribution contains 3 LaTeX *.sty files:
     definitions, and makes other presentation-wide declarations.  This theme
     file is what enables the \usetheme{Hokie} command.
 
-* png logo files
+* `*.png` logo files
     These are logo files with backgrounds that match the default background
     canvas setting in beamercolorthemeHokieLayout. Right now there is the
     generic VT logo, and one for Wireless@VT.
