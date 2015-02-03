@@ -19,24 +19,24 @@ This repository contains two subdirectories:
 
 This distribution contains 3 LaTeX *.sty files:
 
-* `beamercolorthemeHokieColors.sty`
+* `beamercolorthemeHokieColors.sty` - 
     This file defines colors based on the VT Web Color Palette Guidelines. All
     of the colors are defined using RGB values, and assigned to English-language
     names. Note that very few of these colors are actually used in the provided
     theme - they are defined for your use, in case you want to use them on your
     own.
 
-* `beamercolorthemeHokieLayout.sty`
+* `beamercolorthemeHokieLayout.sty` - 
     This style file assigns the defined Hokie Colors to various aspects of the
     slides, defines the bullet point shape and color for {itemize} environments,
     defines some font colors, etc.
 
-* `beamerthemeHokie.sty`
+* `beamerthemeHokie.sty` - 
     This file defines the inner and outer slide theme, pulls in the Hokie Colors
     definitions, and makes other presentation-wide declarations.  This theme
     file is what enables the \usetheme{Hokie} command.
 
-* `*.png` logo files
+* `*.png` logo files - 
     These are logo files with backgrounds that match the default background
     canvas setting in beamercolorthemeHokieLayout. Right now there is the
     generic VT logo, and one for Wireless@VT.
