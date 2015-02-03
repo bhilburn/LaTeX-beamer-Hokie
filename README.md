@@ -9,6 +9,8 @@ This theme can be used for presentations given internally, or for slides present
 
 You can obviously use whatever inner / outer theme you like, but this is what the default looks like:
 
+![](./latex-beamer-example.png)
+
 ## Included Files
 This repository contains two subdirectories:
 
